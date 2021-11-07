@@ -1,0 +1,17 @@
+doctype html 
+html 
+    head 
+        title Imóvel Created 
+    body 
+        h1 Imóvel foi cadastrado com sucesso!
+        p Type: #{type}
+        p Description: #{description} 
+        p Price: #{price}
+        br
+        br
+        button(style={color: 'blue', border: '5px solid red'} onclick='returnInitialPage()') Cadastrar Novo Imóvel
+    script.
+        const returnInitialPage = function() {
+            console.log('you click on pug file');
+            location.href = '/api';
+        }

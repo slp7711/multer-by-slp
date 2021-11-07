@@ -1,0 +1,16 @@
+doctype html 
+html
+    head
+        title Cadastro Imóvies 
+    body 
+        h1 Cadastro de Novos Imóvies
+        form(action="/api/register-new-property" method="post" enctype="multipart/form-data")
+            input(type="text" name="type" placeholder="Tipo de imóvel: casa, apartamento, sala comercial, imóvel rural ")
+            br
+            input(type="text" name="description" placeholder="Descreva detalhadamente o imóvel")
+            br
+            input(type="text" name="price" placeholder="Informar valor do imóvel")
+            br
+            input(type="file" name="photos" multiple)
+            br
+            button Submit 

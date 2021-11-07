@@ -1,0 +1,9 @@
+doctype html 
+html 
+    head 
+        title Delete a property 
+    body 
+        h1 Delete a property from database 
+        form(action="/api/delete_property", method="post" enctype="multipart/form-data") 
+            input(type="text" name="propertyId" placeholder="ID property to delete from DB")
+            button Deletar Imóvel 
